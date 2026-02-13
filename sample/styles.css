@@ -1,0 +1,142 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f8f8f8;
+    color: #333;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Navigation */
+.navbar {
+    background: #00539C;
+    padding: 1rem 0;
+    color: white;
+}
+.logo {
+    float: left;
+    font-size: 1.8rem;
+}
+.nav-links {
+    list-style: none;
+    float: right;
+}
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    background: #0078D7;
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+}
+.hero .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: #FFD700;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 3rem 0;
+}
+.about-section {
+    background: white;
+    text-align: center;
+}
+.features {
+    background: #eef2f3;
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    background: white;
+    width: 30%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Admissions */
+.admissions {
+    background: #fff3cd;
+    text-align: center;
+}
+.admissions .btn {
+    background: #28a745;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Contact */
+.contact form {
+    display: grid;
+    gap: 0.8rem;
+}
+.contact input, .contact textarea, .contact button {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact button {
+    background: #0078D7;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        width: 90%;
+    }
+    .nav-links {
+        text-align: center;
+        float: none;
+    }
+    .nav-links li {
+        display: block;
+        padding: 0.5rem 0;
+    }
+}
