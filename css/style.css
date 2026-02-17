@@ -1431,7 +1431,7 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
   text-align: center !important;
   margin-bottom: 40px;
   color: #050A30;
-  display: block;
+  display: block  !important;;
 }
 
 .form-row {
@@ -1497,6 +1497,7 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
     padding: 25px;
   }
 }
+
 
 
 
