@@ -1428,9 +1428,10 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
 }
 
 .form-card h2 {
-  text-align: center;
+  text-align: center !important;
   margin-bottom: 40px;
   color: #050A30;
+  display: block;
 }
 
 .form-row {
@@ -1496,5 +1497,6 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
     padding: 25px;
   }
 }
+
 
 
