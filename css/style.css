@@ -1498,6 +1498,34 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
   }
 }
 
+/* contact toast msg */
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #050A30;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  transform: translateX(120%);
+  transition: 0.4s ease;
+  z-index: 9999;
+}
+
+.toast.show {
+  transform: translateX(0);
+}
+
+.toast i {
+  color: #FF6C00;
+  font-size: 18px;
+}
+
 
 
 

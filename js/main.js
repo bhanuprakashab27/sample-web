@@ -97,3 +97,40 @@ buttons.forEach(btn => {
   });
 });
 
+// toast msg for contact
+
+const form = document.querySelector("form");
+  const toast = document.getElementById("toast");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        form.reset();
+        showToast();
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    })
+    .catch(error => {
+      alert("Error sending message.");
+    });
+  });
+
+  function showToast() {
+    toast.classList.add("show");
+
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 4000);
+  }
