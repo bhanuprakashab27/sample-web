@@ -583,7 +583,6 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
 /* leadership section */
 
 .leadership-section {
-  padding: 80px 0;
   background: #f4f6fb;
   text-align: center;
 }
@@ -749,7 +748,7 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
 /* academics page start */
 /* teaching methodology */
 .academic-hero{
-  background:url('https://picsum.photos/1920/900?school-classroom') center/cover no-repeat;
+  background:url("../images/academics.jpg") center/cover no-repeat;
   height:60vh;
   position:relative;
   display:flex;
@@ -1019,7 +1018,7 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
 /* admission section start */
 
 #admission-hero {
-  background:url('https://picsum.photos/1920/900?school-classroom') center/cover no-repeat;
+  background:url('../images/admissionbg.jpg') center/cover no-repeat;
   /* height: 70vh;
   display: flex;
   align-items: center;
@@ -1200,7 +1199,7 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
 .notice-hero {
   padding: 80px 0;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('https://picsum.photos/1920/900?school-classroom') center/cover no-repeat;
+              url('../images/notebg.jpeg') center/cover no-repeat;
   color: #fff;
   text-align: center;
 }
@@ -1297,7 +1296,7 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
 .gallery-hero {
   padding: 80px 0;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('https://picsum.photos/1920/900?school-classroom') center/cover no-repeat;
+              url('../images/gallerybg.jpeg') center/cover no-repeat;
   color: #fff;
   text-align: center;
 }
@@ -1388,9 +1387,9 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
 /* contact */
 
 .contact-hero {
-  padding: 80px 0;
+  padding: 100px 0;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('https://picsum.photos/1920/900?school-classroom') center/cover no-repeat;
+              url('../images/contactbg2.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
 }
@@ -1596,3 +1595,43 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
 
 
 
+/* extra Section  */
+/* board of members */
+
+.board-section {
+  background: #f4f6fb;
+}
+
+.board-table-wrapper {
+  overflow-x: auto;
+  margin-top: 40px;
+}
+
+.board-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.board-table thead {
+  background: #050a30;
+  color: #fff;
+}
+
+.board-table th,
+.board-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.board-table tbody tr:hover {
+  background: #f1f5f9;
+}
+
+.board-table th {
+  font-weight: 600;
+}
