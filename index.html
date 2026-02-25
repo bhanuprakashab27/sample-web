@@ -19,8 +19,8 @@
 <header>
   <div class="nav">
     <div class="logo">
-      <img src="https://picsum.photos/60/60?logo" alt="Vasavi School Logo">
-      <span>Vasavi School</span>
+      <img src="images/favicon.png" alt="Vasavi School Logo">
+      <span>Sri Vasavi Vidya Samsthe®</span>
     </div>
     <div class="menu-btn" onclick="toggleMenu()">☰</div>
     <ul class="nav-links" id="navLinks">
@@ -37,22 +37,24 @@
 
 <div class="slider">
   <div class="slides" id="slides">
-    <div class="slide" style="background-image:url('https://picsum.photos/1200/600?school')">
+    <div class="slide" style="background-image:url('images/slide1.jpg')">
       <div class="slide-content">
-        <h2>Welcome To Vasavi School</h2>
-        <p>Shaping Young Minds</p>
-        <a class="btn" href="contact.html">Admissions Open</a>
+         <h2>Welcome to Sri Vasavi Vidya Samsthe®</h2>
+        <p>Providing Quality Education Since 1997</p>
+        <a class="btn" href="admission.html">Admissions Open 2026-27</a>
       </div>
     </div>
-    <div class="slide" style="background-image:url('https://picsum.photos/1200/600?classroom')">
+    <div class="slide" style="background-image:url('images/slide2.png')">
       <div class="slide-content">
-        <h2>Quality Education</h2>
+        <h2>Academic Excellence & Discipline</h2>
+        <p>Nearly 1000 Students | Pre-KG to Grade 10</p>
       </div>
     </div>
-    <div class="slide" style="background-image:url('https://picsum.photos/1200/600?students')">
-      <div class="slide-content">
-        <h2>Future Leaders</h2>
-      </div>
+    <div class="slide" style="background-image:url('images/slide3.png')">
+      <!-- <div class="slide-content">
+       <h2>Outstanding SSLC Results</h2>
+        <p>State & District Rank Holders with Cash Awards</p>
+      </div> -->
     </div>
   </div>
   <div class="arrow left" onclick="prevSlide()">❮</div>
@@ -64,21 +66,29 @@
   <div class="container welcome-flex">
 
     <div class="welcome-text">
-      <h2 class="section-underline">Welcome to Vasavi School</h2>
-      <p>
-        Vasavi School is committed to nurturing young minds with quality education,
-        discipline, and creativity. Our goal is to prepare students for academic
-        excellence and lifelong success.
+      <h2 class="section-underline">Welcome to Sri Vasavi Vidya Samsthe®</h2>
+       <p>
+        Sri Vasavi Vidya Samsthe®, located on Main Road, Sira, was established in 
+        the year 1997 by our visionary founder H.R. Nagaraj. The school began its 
+        journey with just 35 students and has now grown to nearly 1000 students 
+        from Pre-KG to Grade 10.
       </p>
       <p>
-        With experienced teachers and modern facilities, we ensure a safe,
-        inspiring, and supportive learning environment for every child.
+        Our mission is to provide quality education to every child with confidence, 
+        discipline, respect, and strong moral values. We focus on academic excellence 
+        along with Spoken English, Expert Handwriting, Karate training, sports, and 
+        cultural activities to ensure the overall development of every student.
+      </p>
+      <p>
+        With well-qualified teachers, modern facilities, and consistent outstanding 
+        SSLC results, we are committed to shaping responsible, knowledgeable, and 
+        future-ready citizens.
       </p>
       <a href="about.html" class="btn">Know More</a>
     </div>
 
-    <div class="welcome-img">
-      <img src="images/ourPedagogy.png" alt="Welcome Vasavi School">
+    <div class="welcome-img" id="welcome-img-margin">
+      <img src="images/schoolImg.png" alt="Welcome Vasavi School">
     </div>
 
   </div>
@@ -88,87 +98,96 @@
 <section class="offer-section">
   <div class="container">
     <div class="title">
-    <h2 class="section-underline">What We Offer</h2>
+      <h2 class="section-underline">What We Offer</h2>
     </div>
 
-    <!-- Top small slides -->
+    <!-- Top Tabs -->
     <div class="offer-tabs" id="offerTabs">
-      <div class="offer-tab active" onclick="showOffer(0)">Montessori <br> <small>(Pre-Mont to Mont 3)</small></div>
-      <div class="offer-tab" onclick="showOffer(1)">Exploratory Stage <br> <small>(Grades 1 to 5)</small></div>
-      <div class="offer-tab" onclick="showOffer(2)">Developmental Stage <br> <small>(Grades 6 to 8)</small></div>
-      <div class="offer-tab" onclick="showOffer(3)">Advanced Stage <br> <small>(Grades 9 & 10)</small></div>
+      <div class="offer-tab active" onclick="showOffer(0)">Pre-Primary <br> <small>(Pre-KG to UKG)</small></div>
+      <div class="offer-tab" onclick="showOffer(1)">Primary Section <br> <small>(Grades 1 to 5)</small></div>
+      <div class="offer-tab" onclick="showOffer(2)">Middle School <br> <small>(Grades 6 to 8)</small></div>
+      <div class="offer-tab" onclick="showOffer(3)">High School <br> <small>(Grades 9 & 10)</small></div>
     </div>
 
-    <!-- Details below -->
+    <!-- Details -->
     <div class="offer-content">
 
+      <!-- Pre Primary -->
       <div class="offer-box active">
         <div class="offer-inner">
           <div class="offer-img">
-            <img src="https://picsum.photos/60/60?logo" alt="Montessori">
+            <img src="images/prePrimary.jpg" alt="Pre Primary">
           </div>
           <div class="offer-text">
-            <h2>Vasavi Montessori(Pre-Mont to Mont 3)</h2>
+            <h2>Pre-Primary (Pre-KG to UKG)</h2>
             <p>
-              Early childhood education with play-based learning, creativity,
-              communication and social development.
+              A joyful and nurturing learning environment where young learners 
+              develop basic literacy, numeracy, communication skills, and social 
+              confidence through activity-based and play-way methods.
             </p>
           </div>
         </div>
       </div>
 
+      <!-- Primary -->
       <div class="offer-box">
         <div class="offer-inner">
           <div class="offer-img">
-            <img src="https://picsum.photos/60/60?logo" alt="Primary">
+            <img src="images/primary.jpg" alt="Primary Section">
           </div>
           <div class="offer-text">
-            <h2>Exploratory Stage(Grades 1 to 5)</h2>
+            <h2>Primary Section (Grades 1 to 5)</h2>
             <p>
-              Strong academic foundation with focus on curiosity, discipline,
-              reading, writing and logical thinking skills.
+              Strong academic foundation with focus on reading, writing, 
+              mathematics, and spoken English. Expert Handwriting training 
+              (Grade 1–7) is introduced to improve presentation and clarity.
             </p>
           </div>
         </div>
       </div>
 
+      <!-- Middle School -->
       <div class="offer-box">
         <div class="offer-inner">
           <div class="offer-img">
-            <img src="https://picsum.photos/60/60?logo" alt="Middle School">
+            <img src="images/middle.jpg" alt="Middle School">
           </div>
           <div class="offer-text">
-            <h2>Developmental Stage(Grades 6 to 8)</h2>
+            <h2>Middle School (Grades 6 to 8)</h2>
             <p>
-              Enhancing critical thinking, leadership qualities, teamwork and
-              problem-solving abilities.
+              Focus on conceptual learning, discipline, and skill development. 
+              Students receive Spoken English training and Karate classes 
+              (Grade 5–7) to build confidence, leadership, and physical fitness.
             </p>
           </div>
         </div>
       </div>
 
+      <!-- High School -->
       <div class="offer-box">
         <div class="offer-inner">
-           <div class="offer-img">
-            <img src="https://picsum.photos/60/60?logo" alt="High School">
+          <div class="offer-img">
+            <img src="images/secondary.jpg" alt="High School">
           </div>
           <div class="offer-text">
-            <h2>Advanced Stage (Grades 9 & 10)</h2>
+            <h2>High School (Grades 9 & 10)</h2>
             <p>
-              Focused preparation for board examinations with career guidance,
-              mentoring and academic excellence.
+              Dedicated preparation for SSLC Board Examinations with 
+              experienced faculty and structured guidance. The school has 
+              consistently produced outstanding results, including state 
+              and district rank holders.
             </p>
           </div>
         </div>
       </div>
-
 
     </div>
   </div>
 </section>
 
-<!-- why choose -->
 
+<!-- why choose -->
+<!-- 
 <section class="why-section">
   <div class="container">
     
@@ -205,59 +224,112 @@
     </div>
 
   </div>
-</section>
-<!-- campus section -->
+</section> -->
 
+<section class="why-section">
+  <div class="container">
+    
+    <div class="title">
+      <h2 class="section-underline">Why Choose Sri Vasavi Vidya Samsthe®</h2>
+    </div>
+
+    <div class="why-cards">
+
+      <div class="why-card">
+        <div class="why-icon"><i class="fas fa-award"></i></div>
+        <h3>Outstanding SSLC Results</h3>
+        <p>
+          Nearly 20 successful SSLC batches with exceptional results including 
+          624/625 (State Rank), 619/625 (District Topper), and 621/625 (Taluk Rank).
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+        <h3>Qualified & Dedicated Faculty</h3>
+        <p>
+          Well-qualified and service-minded teachers committed to academic excellence 
+          and the overall development of every student.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon"><i class="fas fa-school"></i></div>
+        <h3>Well-Equipped Infrastructure</h3>
+        <p>
+          33 classrooms, Science Lab, Computer Lab, Library, Drawing Room, 
+          Sports Room, Staff Rooms, and a well-established open amphitheatre 
+          for nursery students.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon"><i class="fas fa-running"></i></div>
+        <h3>Holistic Development</h3>
+        <p>
+          Spoken English (Grade 1–10), Expert Handwriting (Grade 1–7), 
+          Karate (Grade 5–7), annual sports events, cultural programs, 
+          and participation in Taluk, District & State level competitions.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- campus section -->
 <section class="campus-section">
   <div class="container">
 
     <div class="section-title">
-      <h2 class="section-underline">Life at Vasavi Campus</h2>
-      <p>A nurturing environment where students grow, explore, and belong.</p>
+      <h2 class="section-underline">Life at Sri Vasavi Vidya Samsthe®</h2>
+      <p>More than a school — a place where students learn, grow, and celebrate together.</p>
     </div>
 
     <div class="campus-grid">
 
       <div class="campus-card">
-        <img src="https://picsum.photos/600/400?school,building" alt="Campus Environment">
+        <img src="images/life1.jpg" alt="Morning Assembly">
         <div class="campus-info">
-          <h3 class="section-underline">Green & Peaceful Environment</h3>
+          <h3 class="section-underline">Disciplined & Value-Based Culture</h3>
           <p>
-            A calm, safe, and student-friendly campus designed to support focus,
-            creativity, and well-being.
+            Every day begins with discipline, respect, and moral values, 
+            shaping responsible and confident individuals.
           </p>
         </div>
       </div>
 
       <div class="campus-card">
-        <img src="https://picsum.photos/600/400?students,school" alt="Student Life">
+        <img src="images/life2.webp" alt="Annual Day">
         <div class="campus-info">
-          <h3 class="section-underline">Vibrant Student Life</h3>
+          <h3 class="section-underline">Celebrations & Annual Events</h3>
           <p>
-            Encouraging interaction, leadership, and teamwork through daily school
-            life experiences.
+            Annual Day celebrations and cultural programs provide students 
+            a platform to showcase talents and build stage confidence.
           </p>
         </div>
       </div>
 
       <div class="campus-card">
-        <img src="https://picsum.photos/600/400?art,classroom" alt="Activity Zone">
+        <img src="images/life3.jpg" alt="Sports Day">
         <div class="campus-info">
-          <h3 class="section-underline">Creative Activity Zones</h3>
+          <h3 class="section-underline">Sports & Team Spirit Building</h3>
           <p>
-            Dedicated spaces for arts, clubs, and co-curricular engagement beyond
-            classrooms.
+            Annual sports activities encourage physical fitness, teamwork, 
+            leadership qualities, and competitive spirit among students.
           </p>
         </div>
       </div>
 
       <div class="campus-card">
-        <img src="https://picsum.photos/600/400?playground,school" alt="Safety">
+        <img src="images/life4.jpg" alt="Student Interaction">
         <div class="campus-info">
-          <h3 class="section-underline">Student Safety & Care</h3>
+          <h3 class="section-underline">Friendship & Confidence Building</h3>
           <p>
-            A monitored, caring environment that ensures physical and emotional
-            security for every child.
+            Through spoken English training, interactive learning, and 
+            co-curricular programs, students build communication skills 
+            and lifelong friendships.
           </p>
         </div>
       </div>
@@ -269,40 +341,47 @@
 
 
 <!-- achivements -->
-
 <section class="achievements-section">
   <div class="container">
 
     <div class="title">
       <h2 class="section-underline">Our Achievements</h2>
+      <p>Excellence in academics and consistent performance over the years.</p>
     </div>
 
     <div class="achieve-cards">
 
-      <div class="achieve-card">
-        <h3>100%</h3>
-        <p>Board Results</p>
+       <div class="achieve-card">
+        <h3>29+</h3>
+        <h2>Years of Excellence</h2>
       </div>
 
       <div class="achieve-card">
-        <h3>2500+</h3>
-        <p>Happy Students</p>
+        <h3>1000+</h3>
+        <h2>Students from Pre-KG to Grade 10</h2>
+      </div>
+
+      <div class="achieve-card ">
+        <h3>State Rank</h3>
+        <h2>624 / 625</h2>
+        <p>Outstanding SSLC Performance</p>
       </div>
 
       <div class="achieve-card">
-        <h3>150+</h3>
-        <p>Awards Won</p>
+        <h3>District Topper</h3>
+        <h2>619 / 625</h2>
       </div>
 
       <div class="achieve-card">
-        <h3>25+</h3>
-        <p>Years of Excellence</p>
+        <h3>Taluk Rank</h3>
+        <h2>621 / 625</h2>
       </div>
 
     </div>
 
   </div>
 </section>
+
 
 <!-- info section -->
 <section class="info-section">
