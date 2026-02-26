@@ -40,7 +40,9 @@
   </div>
 </div>
 
-<section class="gallery-section">
+
+<!-- gallery with filter structure -->
+<!-- <section class="gallery-section">
   <div class="container">
 
     <div class="section-header">
@@ -86,36 +88,275 @@
     </div>
 
   </div>
-</section>
-<!-- 
-<section>
+</section> -->
+
+<section class="gallery-section">
   <div class="container">
-    <div class="title"><h2>School News & Events</h2></div>
 
-    <div class="cards">
-      <div class="card">
-        <img src="https://picsum.photos/400/300?event">
-        <h3>Annual Day Celebration</h3>
-        <p>Students performed cultural programs and activities.</p>
+    <div class="section-header">
+      <h2 class="section-underline">Our Gallery</h2>
+
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="sports">Sports & cultural</button>
+        <button class="filter-btn" data-filter="activities">Activities</button>
+         <button class="filter-btn" data-filter="others">Others</button>
+      </div>
+    </div>
+
+    <!-- ===== ALBUM VIEW (Only for ALL) ===== -->
+    <div id="albumView" class="album-grid">
+
+      <div class="album-card" onclick="openAlbum('event')">
+        <img src="images/gallery/event1.jpg" alt="">
+        <div class="album-overlay">
+          <h3>Events</h3>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="https://picsum.photos/400/300?sports">
-        <h3>Sports Day</h3>
-        <p>Exciting competitions with prizes and teamwork spirit.</p>
+      <div class="album-card" onclick="openAlbum('sports')">
+        <img src="images/gallery/sports1.jpg" alt="">
+        <div class="album-overlay">
+          <h3>Sports & Cultural</h3>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="https://picsum.photos/400/300?seminar">
-        <h3>Science Exhibition</h3>
-        <p>Students showcased innovative science projects.</p>
+      <div class="album-card" onclick="openAlbum('activities')">
+        <img src="images/gallery/activities1.jpg" alt="">
+        <div class="album-overlay">
+          <h3>Activities</h3>
+        </div>
       </div>
+
+      <div class="album-card" onclick="openAlbum('others')">
+        <img src="images/gallery/others1.jpg" alt="">
+        <div class="album-overlay">
+          <h3>Others</h3>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ===== NORMAL GRID VIEW ===== -->
+    <div id="normalView" class="gallery-grid" style="display:none;">
+
+      <div class="gallery-item" data-category="events">
+        <img src="images/gallery/event1.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="images/gallery/event2.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="images/gallery/event3.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="images/gallery/event4.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="images/gallery/event5.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="images/gallery/event6.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="images/gallery/event7.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="images/gallery/event8.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="images/gallery/event9.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="images/gallery/event10.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="images/gallery/event11.jpg" alt="">
+      </div>
+      <!-- <div class="gallery-item" data-category="events">
+        <img src="images/gallery/event12.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="images/gallery/event13.jpg" alt="">
+      </div> -->
+      
+<!-- sports -->
+
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports1.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports2.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports3.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports4.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports5.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports6.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports7.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports8.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports9.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports10.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports11.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports12.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports13.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports14.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports15.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports16.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports17.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports18.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports19.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports20.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports21.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports22.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/sports23.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/cultural1.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/cultural2.jpg" alt="">
+      </div>
+       <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/cultural3.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="images/gallery/cultural4.jpg" alt="">
+      </div>
+
+<!-- activities -->
+      <div class="gallery-item" data-category="activities">
+        <img src="images/gallery/activities1.jpg" alt="">
+      </div>
+       <div class="gallery-item" data-category="activities">
+        <img src="images/gallery/activities2.jpg" alt="">
+      </div>
+       <div class="gallery-item" data-category="activities">
+        <img src="images/gallery/activities3.jpg" alt="">
+      </div>
+       <div class="gallery-item" data-category="activities">
+        <img src="images/gallery/activities4.jpg" alt="">
+      </div>
+       <div class="gallery-item" data-category="activities">
+        <img src="images/gallery/activities5.jpg" alt="">
+      </div>
+       <div class="gallery-item" data-category="activities">
+        <img src="images/gallery/activities6.jpg" alt="">
+      </div>
+       <div class="gallery-item" data-category="activities">
+        <img src="images/gallery/activities7.jpg" alt="">
+      </div>
+       <div class="gallery-item" data-category="activities">
+        <img src="images/gallery/activities8.jpg" alt="">
+      </div>
+       <div class="gallery-item" data-category="activities">
+        <img src="images/gallery/activities9.jpg" alt="">
+      </div>
+       <div class="gallery-item" data-category="activities">
+        <img src="images/gallery/activities10.jpg" alt="">
+      </div>
+       <div class="gallery-item" data-category="activities">
+        <img src="images/gallery/activities11.jpg" alt="">
+      </div>
+       <div class="gallery-item" data-category="activities">
+        <img src="images/gallery/activities12.jpg" alt="">
+      </div>
+       <div class="gallery-item" data-category="activities">
+        <img src="images/gallery/activities13.jpg" alt="">
+      </div>
+<!-- others -->
+      <div class="gallery-item" data-category="others">
+        <img src="images/gallery/others1.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="others">
+        <img src="images/gallery/others2.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="others">
+        <img src="images/gallery/others3.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="others">
+        <img src="images/gallery/others4.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="others">
+        <img src="images/gallery/others5.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="others">
+        <img src="images/gallery/others6.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="others">
+        <img src="images/gallery/others7.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="others">
+        <img src="images/gallery/others8.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="others">
+        <img src="images/gallery/others9.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="others">
+        <img src="images/gallery/others10.jpg" alt="">
+      </div>
+      <div class="gallery-item" data-category="others">
+        <img src="images/gallery/others11.jpg" alt="">
+      </div>
+
     </div>
 
   </div>
 </section>
 
- -->
+
+<!-- LIGHTBOX POPUP -->
+<div class="lightbox" id="lightbox">
+  <span class="close" onclick="closeAlbum()">&times;</span>
+  <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+  <img id="lightboxImage">
+  <span class="next" onclick="changeSlide(1)">&#10095;</span>
+</div>
+
+
+
 <!-- info section -->
 <section class="info-section">
   <div class="container">
@@ -186,7 +427,178 @@
   <p>© 2026 Vasavi School. All Rights Reserved.</p>
 </footer>
 
-<script src="js/main.js"></script>
+<script>
+
+  function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("show");
+}
+
+// slider only if exists
+const slides = document.getElementById("slides");
+if(slides){
+  let index = 0;
+  const totalSlides = slides.children.length;
+
+  function showSlide(){
+    slides.style.transform = `translateX(-${index*100}%)`;
+  }
+
+  window.nextSlide = function(){
+    index = (index+1) % totalSlides;
+    showSlide();
+  }
+
+  window.prevSlide = function(){
+    index = (index-1+totalSlides) % totalSlides;
+    showSlide();
+  }
+
+  setInterval(nextSlide,4000);
+}
+  
+ let currentIndex = 0;
+let currentAlbum = [];
+
+const albums = {
+  event: [
+    "images/gallery/event1.jpg",
+    "images/gallery/event2.jpg",
+    "images/gallery/event3.jpg",
+    "images/gallery/event4.jpg",
+    "images/gallery/event5.jpg",
+    "images/gallery/event6.jpg",
+    "images/gallery/event7.jpg",
+    "images/gallery/event8.jpg",
+    "images/gallery/event9.jpg",
+    "images/gallery/event10.jpg",
+    "images/gallery/event11.jpg"
+  ],
+  sports: [
+   "images/gallery/sports1.jpg",
+   "images/gallery/sports2.jpg",
+   "images/gallery/sports3.jpg",
+   "images/gallery/sports4.jpg",
+   "images/gallery/sports5.jpg",
+   "images/gallery/sports6.jpg",
+   "images/gallery/sports7.jpg",
+   "images/gallery/sports8.jpg",
+   "images/gallery/sports9.jpg",
+   "images/gallery/sports10.jpg",
+   "images/gallery/sports11.jpg",
+   "images/gallery/sports12.jpg",
+   "images/gallery/sports13.jpg",
+   "images/gallery/sports14.jpg",
+   "images/gallery/sports15.jpg",
+   "images/gallery/sports16.jpg",
+   "images/gallery/sports17.jpg",
+   "images/gallery/sports18.jpg",
+   "images/gallery/sports19.jpg",
+   "images/gallery/sports20.jpg",
+   "images/gallery/sports21.jpg",
+   "images/gallery/sports22.jpg",
+   "images/gallery/sports23.jpg",
+
+    "images/gallery/cultural1.jpg",
+    "images/gallery/cultural2.jpg",
+    "images/gallery/cultural3.jpg",
+    "images/gallery/cultural4.jpg"
+   
+  ],
+  activities: [
+   "images/gallery/activities1.jpg",
+   "images/gallery/activities2.jpg",
+   "images/gallery/activities3.jpg",
+   "images/gallery/activities4.jpg",
+   "images/gallery/activities5.jpg",
+   "images/gallery/activities6.jpg",
+   "images/gallery/activities7.jpg",
+   "images/gallery/activities8.jpg",
+   "images/gallery/activities9.jpg",
+   "images/gallery/activities10.jpg",
+   "images/gallery/activities11.jpg",
+   "images/gallery/activities12.jpg",
+   "images/gallery/activities13.jpg",
+  ],
+  others: [
+  "images/gallery/others1.jpg",
+  "images/gallery/others2.jpg",
+  "images/gallery/others3.jpg",
+  "images/gallery/others4.jpg",
+  "images/gallery/others5.jpg",
+  "images/gallery/others6.jpg",
+  "images/gallery/others7.jpg",
+  "images/gallery/others8.jpg",
+  "images/gallery/others9.jpg",
+  "images/gallery/others10.jpg",
+  "images/gallery/others11.jpg",
+  ]
+};
+
+function openAlbum(name) {
+  currentAlbum = albums[name];
+  currentIndex = 0;
+  document.getElementById("lightbox").style.display = "flex";
+  showImage();
+}
+
+function closeAlbum() {
+  document.getElementById("lightbox").style.display = "none";
+}
+
+function changeSlide(step) {
+  currentIndex += step;
+
+  if (currentIndex < 0) {
+    currentIndex = currentAlbum.length - 1;
+  }
+
+  if (currentIndex >= currentAlbum.length) {
+    currentIndex = 0;
+  }
+
+  showImage();
+}
+
+function showImage() {
+  document.getElementById("lightboxImage").src = currentAlbum[currentIndex];
+}
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const albumView = document.getElementById("albumView");
+const normalView = document.getElementById("normalView");
+const galleryItems = document.querySelectorAll(".gallery-item");
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", function () {
+
+    filterButtons.forEach(btn => btn.classList.remove("active"));
+    this.classList.add("active");
+
+    const filter = this.getAttribute("data-filter");
+
+    if (filter === "all") {
+      albumView.style.display = "grid";
+      normalView.style.display = "none";
+    } else {
+      albumView.style.display = "none";
+      normalView.style.display = "grid";
+
+      galleryItems.forEach(item => {
+        const category = item.getAttribute("data-category");
+
+        if (category === filter) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+
+  });
+});
+
+</script>
+
 </body>
 </html>
 

@@ -72,30 +72,30 @@ function autoOffer(){
   setInterval(activateStep, 1000);
 
 
-  // gallery
+  // gallery with filter
 
 
-const buttons = document.querySelectorAll(".filter-btn");
-const items = document.querySelectorAll(".gallery-item");
+// const buttons = document.querySelectorAll(".filter-btn");
+// const items = document.querySelectorAll(".gallery-item");
 
-buttons.forEach(btn => {
-  btn.addEventListener("click", () => {
+// buttons.forEach(btn => {
+//   btn.addEventListener("click", () => {
 
-    document.querySelector(".filter-btn.active").classList.remove("active");
-    btn.classList.add("active");
+//     document.querySelector(".filter-btn.active").classList.remove("active");
+//     btn.classList.add("active");
 
-    const filter = btn.getAttribute("data-filter");
+//     const filter = btn.getAttribute("data-filter");
 
-    items.forEach(item => {
-      if (filter === "all" || item.getAttribute("data-category") === filter) {
-        item.style.display = "block";
-      } else {
-        item.style.display = "none";
-      }
-    });
+//     items.forEach(item => {
+//       if (filter === "all" || item.getAttribute("data-category") === filter) {
+//         item.style.display = "block";
+//       } else {
+//         item.style.display = "none";
+//       }
+//     });
 
-  });
-});
+//   });
+// });
 
 // toast msg for contact
 
@@ -134,3 +134,12 @@ const form = document.querySelector("form");
       toast.classList.remove("show");
     }, 4000);
   }
+
+
+
+
+
+
+
+
+
