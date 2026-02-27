@@ -37,10 +37,16 @@ function showOffer(index){
   tabs.forEach(t => t.classList.remove("active"));
   boxes.forEach(b => b.classList.remove("active"));
 
+  if(tabs[index] && boxes[index]){
   tabs[index].classList.add("active");
   boxes[index].classList.add("active");
 
-  offerIndex = index;
+ tabs[index].scrollIntoView({
+  behavior: "smooth",
+  inline: "center",
+  block:"nearest"
+ });
+}
 }
 
 function autoOffer(){

@@ -277,6 +277,33 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
   .offer-text{
     text-align:center;
   }
+
+  .offer-tabs {
+    flex-wrap: nowrap;        /* Stop wrapping */
+    overflow-x: auto;         /* Enable horizontal scroll */
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 10px 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .offer-tab {
+    flex: 0 0 100%;            /* Each tab takes 80% width */
+    max-width: 100%;
+    text-align: center;
+    scroll-snap-align: center;
+    white-space: normal;      /* Allow text to wrap */
+  }
+
+  /* Hide scrollbar */
+  .offer-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .offer-tabs {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
 
 
@@ -335,6 +362,42 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
 .why-card p:hover{
   color: #fff;
 }
+.why-card p,
+.why-card h3 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+
+/* ===== MOBILE HORIZONTAL SCROLL ===== */
+@media (max-width: 768px) {
+
+  .why-cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+  }
+
+  .why-card {
+    flex: 0 0 100%;
+    max-width: 99%;
+    scroll-snap-align: start;
+  }
+
+  .why-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .why-cards {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+}
+
 
 /* campus section */
 
