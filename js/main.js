@@ -30,23 +30,40 @@ if(slides){
 let offerIndex = 0;
 autoOffer();
 
-function showOffer(index){
+function showOffer(index) {
+
   const tabs = document.querySelectorAll(".offer-tab");
   const boxes = document.querySelectorAll(".offer-box");
+  const container = document.querySelector(".offer-tabs");
+
+  if (!tabs.length || !boxes.length) return;
 
   tabs.forEach(t => t.classList.remove("active"));
   boxes.forEach(b => b.classList.remove("active"));
 
-  if(tabs[index] && boxes[index]){
-  tabs[index].classList.add("active");
-  boxes[index].classList.add("active");
+  if (tabs[index] && boxes[index]) {
 
- tabs[index].scrollIntoView({
-  behavior: "smooth",
-  inline: "center",
-  block:"nearest"
- });
-}
+    tabs[index].classList.add("active");
+    boxes[index].classList.add("active");
+
+    offerIndex = index;
+
+    // ✅ Only scroll horizontally on mobile
+    if (window.innerWidth <= 768) {
+
+      const tab = tabs[index];
+
+      const scrollPosition =
+        tab.offsetLeft -
+        (container.offsetWidth / 2) +
+        (tab.offsetWidth / 2);
+
+      container.scrollTo({
+        left: scrollPosition,
+        behavior: "smooth"
+      });
+    }
+  }
 }
 
 function autoOffer(){

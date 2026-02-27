@@ -279,17 +279,18 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
   }
 
   .offer-tabs {
-    flex-wrap: nowrap;        /* Stop wrapping */
-    overflow-x: auto;         /* Enable horizontal scroll */
+    flex-wrap: nowrap;        
+    overflow-x: auto;         
     justify-content: flex-start;
     gap: 15px;
     padding: 10px 10px;
     scroll-snap-type: x mandatory;
+    position: relative;
   }
 
   .offer-tab {
-    flex: 0 0 100%;            /* Each tab takes 80% width */
-    max-width: 100%;
+    flex: 0 0 90%;           
+    max-width: 90%;
     text-align: center;
     scroll-snap-align: center;
     white-space: normal;      /* Allow text to wrap */
@@ -382,8 +383,8 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
   }
 
   .why-card {
-    flex: 0 0 100%;
-    max-width: 99%;
+    flex: 0 0 90%;
+    max-width: 90%;
     scroll-snap-align: start;
   }
 
