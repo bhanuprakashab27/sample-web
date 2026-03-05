@@ -158,6 +158,16 @@ const form = document.querySelector("form");
     }, 4000);
   }
 
+// download admission form
+
+function downloadPDF() {
+  const link = document.createElement("a");
+  link.href = "images/files/admission-form.zip";
+  link.download = "Admission-Form.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 
 
 

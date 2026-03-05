@@ -1101,6 +1101,13 @@ footer{background:#02061f;color:white;text-align:center;padding:22px}
   background: #ffffff;
   text-align: center;
 }
+.download-icon{
+  margin-left:10px;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+}
+
 
 .procedure-text {
   max-width: 850px;
